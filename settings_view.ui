@@ -1,0 +1,1343 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SettingsWidget</class>
+ <widget class="QWidget" name="SettingsWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>625</width>
+    <height>608</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Settings</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QTabWidget" name="tabWidget">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="tab_2">
+      <attribute name="title">
+       <string>Cloud Detection</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout_7">
+       <item>
+        <widget class="QSplitter" name="splitter_2">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <widget class="QWidget" name="layoutWidget">
+          <layout class="QVBoxLayout" name="verticalLayout_5">
+           <item>
+            <widget class="QGroupBox" name="groupBox_5">
+             <property name="title">
+              <string>Red/Blue Difference</string>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_5">
+              <item row="0" column="0">
+               <widget class="QLabel" name="label_6">
+                <property name="text">
+                 <string>&amp;Threshold</string>
+                </property>
+                <property name="buddy">
+                 <cstring>rb_difference_threshold</cstring>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="1">
+               <widget class="QSpinBox" name="rb_difference_threshold">
+                <property name="minimum">
+                 <number>-255</number>
+                </property>
+                <property name="maximum">
+                 <number>255</number>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QGroupBox" name="groupBox_6">
+             <property name="title">
+              <string>Red/Blue Ratio</string>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_6">
+              <item row="0" column="0">
+               <widget class="QLabel" name="label_12">
+                <property name="text">
+                 <string>&amp;Threshold</string>
+                </property>
+                <property name="buddy">
+                 <cstring>rb_ratio_threshold</cstring>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="1">
+               <widget class="QDoubleSpinBox" name="rb_ratio_threshold">
+                <property name="decimals">
+                 <number>3</number>
+                </property>
+                <property name="minimum">
+                 <double>0.001000000000000</double>
+                </property>
+                <property name="maximum">
+                 <double>5.000000000000000</double>
+                </property>
+                <property name="singleStep">
+                 <double>0.100000000000000</double>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QGroupBox" name="groupBox_8">
+             <property name="title">
+              <string>Blue/Red Ratio</string>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_7">
+              <item row="0" column="0">
+               <widget class="QLabel" name="label_13">
+                <property name="text">
+                 <string>&amp;Threshold</string>
+                </property>
+                <property name="buddy">
+                 <cstring>br_ratio_threshold</cstring>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="1">
+               <widget class="QDoubleSpinBox" name="br_ratio_threshold">
+                <property name="decimals">
+                 <number>3</number>
+                </property>
+                <property name="minimum">
+                 <double>0.001000000000000</double>
+                </property>
+                <property name="maximum">
+                 <double>5.000000000000000</double>
+                </property>
+                <property name="singleStep">
+                 <double>0.100000000000000</double>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QGroupBox" name="groupBox_19">
+             <property name="title">
+              <string>Normalized Blue/Red Ratio</string>
+             </property>
+             <layout class="QHBoxLayout" name="horizontalLayout">
+              <item>
+               <widget class="QLabel" name="label_44">
+                <property name="text">
+                 <string>&amp;Threshold</string>
+                </property>
+                <property name="buddy">
+                 <cstring>nbr_threshold</cstring>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QDoubleSpinBox" name="nbr_threshold">
+                <property name="decimals">
+                 <number>3</number>
+                </property>
+                <property name="minimum">
+                 <double>-5.000000000000000</double>
+                </property>
+                <property name="maximum">
+                 <double>5.000000000000000</double>
+                </property>
+                <property name="singleStep">
+                 <double>0.010000000000000</double>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QGroupBox" name="groupBox_7">
+             <property name="title">
+              <string>Adaptive Threshold</string>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_8">
+              <item row="0" column="0">
+               <widget class="QLabel" name="label_14">
+                <property name="text">
+                 <string>&amp;Threshold</string>
+                </property>
+                <property name="buddy">
+                 <cstring>adaptive_threshold</cstring>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="1">
+               <widget class="QSpinBox" name="adaptive_threshold">
+                <property name="minimum">
+                 <number>-255</number>
+                </property>
+                <property name="maximum">
+                 <number>255</number>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="0">
+               <widget class="QLabel" name="label_15">
+                <property name="text">
+                 <string>Block Si&amp;ze</string>
+                </property>
+                <property name="buddy">
+                 <cstring>adaptive_block_size</cstring>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="1">
+               <widget class="QSpinBox" name="adaptive_block_size">
+                <property name="suffix">
+                 <string> pixel</string>
+                </property>
+                <property name="minimum">
+                 <number>1</number>
+                </property>
+                <property name="maximum">
+                 <number>511</number>
+                </property>
+                <property name="singleStep">
+                 <number>2</number>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QGroupBox" name="groupBox_11">
+             <property name="title">
+              <string>Morphology</string>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_10">
+              <item row="0" column="0">
+               <widget class="QLabel" name="label_26">
+                <property name="text">
+                 <string>&amp;Kernel Size</string>
+                </property>
+                <property name="buddy">
+                 <cstring>morphology_kernel_size</cstring>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="1">
+               <widget class="QSpinBox" name="morphology_kernel_size">
+                <property name="suffix">
+                 <string> pixel</string>
+                </property>
+                <property name="minimum">
+                 <number>1</number>
+                </property>
+                <property name="maximum">
+                 <number>511</number>
+                </property>
+                <property name="singleStep">
+                 <number>2</number>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="0">
+               <widget class="QLabel" name="label_27">
+                <property name="text">
+                 <string>&amp;Iterations</string>
+                </property>
+                <property name="buddy">
+                 <cstring>morphology_iterations</cstring>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="1">
+               <widget class="QSpinBox" name="morphology_iterations">
+                <property name="minimum">
+                 <number>1</number>
+                </property>
+                <property name="maximum">
+                 <number>100</number>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="layoutWidget">
+          <layout class="QVBoxLayout" name="verticalLayout_6">
+           <item>
+            <widget class="QGroupBox" name="groupBox_9">
+             <property name="title">
+              <string>Background Subtraction</string>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_9">
+              <item row="0" column="0">
+               <widget class="QLabel" name="label_16">
+                <property name="text">
+                 <string>&amp;Rect Size</string>
+                </property>
+                <property name="buddy">
+                 <cstring>background_rect_size</cstring>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="1">
+               <widget class="QSpinBox" name="background_rect_size">
+                <property name="suffix">
+                 <string> pixel</string>
+                </property>
+                <property name="minimum">
+                 <number>1</number>
+                </property>
+                <property name="maximum">
+                 <number>511</number>
+                </property>
+                <property name="singleStep">
+                 <number>2</number>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QGroupBox" name="groupBox_10">
+             <property name="title">
+              <string>Multicolor Criterion</string>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_12">
+              <item row="0" column="0">
+               <widget class="QLabel" name="label_17">
+                <property name="text">
+                 <string>&amp;R-B Threshold</string>
+                </property>
+                <property name="buddy">
+                 <cstring>mc_rb_threshold</cstring>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="0">
+               <widget class="QLabel" name="label_18">
+                <property name="text">
+                 <string>B-&amp;G Threshold</string>
+                </property>
+                <property name="buddy">
+                 <cstring>mc_bg_threshold</cstring>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="0">
+               <widget class="QLabel" name="label_19">
+                <property name="text">
+                 <string>&amp;B Threshold</string>
+                </property>
+                <property name="buddy">
+                 <cstring>mc_b_threshold</cstring>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="1">
+               <widget class="QSpinBox" name="mc_b_threshold">
+                <property name="maximum">
+                 <number>256</number>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="1">
+               <widget class="QSpinBox" name="mc_rb_threshold">
+                <property name="minimum">
+                 <number>-255</number>
+                </property>
+                <property name="maximum">
+                 <number>255</number>
+                </property>
+                <property name="singleStep">
+                 <number>5</number>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="1">
+               <widget class="QSpinBox" name="mc_bg_threshold">
+                <property name="minimum">
+                 <number>-255</number>
+                </property>
+                <property name="maximum">
+                 <number>255</number>
+                </property>
+                <property name="singleStep">
+                 <number>5</number>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QGroupBox" name="groupBox_12">
+             <property name="title">
+              <string>Superpixel Segmentation</string>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_11">
+              <item row="0" column="0">
+               <widget class="QLabel" name="label_20">
+                <property name="text">
+                 <string>Superpi&amp;xels</string>
+                </property>
+                <property name="buddy">
+                 <cstring>sp_num_superpixels</cstring>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="1">
+               <widget class="QSpinBox" name="sp_num_superpixels">
+                <property name="minimum">
+                 <number>2</number>
+                </property>
+                <property name="maximum">
+                 <number>1000</number>
+                </property>
+                <property name="singleStep">
+                 <number>10</number>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="0">
+               <widget class="QLabel" name="label_21">
+                <property name="text">
+                 <string>&amp;Prior</string>
+                </property>
+                <property name="buddy">
+                 <cstring>sp_prior</cstring>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="1">
+               <widget class="QSpinBox" name="sp_prior">
+                <property name="maximum">
+                 <number>5</number>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="0">
+               <widget class="QLabel" name="label_22">
+                <property name="text">
+                 <string>&amp;Levels</string>
+                </property>
+                <property name="buddy">
+                 <cstring>sp_num_levels</cstring>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="1">
+               <widget class="QSpinBox" name="sp_num_levels">
+                <property name="minimum">
+                 <number>1</number>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="0">
+               <widget class="QLabel" name="label_23">
+                <property name="text">
+                 <string>&amp;Histogram Bins</string>
+                </property>
+                <property name="buddy">
+                 <cstring>sp_num_histogram_bins</cstring>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="1">
+               <widget class="QSpinBox" name="sp_num_histogram_bins">
+                <property name="minimum">
+                 <number>2</number>
+                </property>
+               </widget>
+              </item>
+              <item row="4" column="0">
+               <widget class="QLabel" name="label_24">
+                <property name="text">
+                 <string>&amp;Iterations</string>
+                </property>
+                <property name="buddy">
+                 <cstring>sp_num_iterations</cstring>
+                </property>
+               </widget>
+              </item>
+              <item row="4" column="1">
+               <widget class="QSpinBox" name="sp_num_iterations">
+                <property name="minimum">
+                 <number>1</number>
+                </property>
+               </widget>
+              </item>
+              <item row="5" column="0">
+               <widget class="QLabel" name="label_25">
+                <property name="text">
+                 <string>&amp;Kernel Size</string>
+                </property>
+                <property name="buddy">
+                 <cstring>sp_kernel_size</cstring>
+                </property>
+               </widget>
+              </item>
+              <item row="5" column="1">
+               <widget class="QSpinBox" name="sp_kernel_size">
+                <property name="suffix">
+                 <string> pixel</string>
+                </property>
+                <property name="minimum">
+                 <number>1</number>
+                </property>
+                <property name="maximum">
+                 <number>511</number>
+                </property>
+                <property name="singleStep">
+                 <number>2</number>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab_3">
+      <attribute name="title">
+       <string>Star Detection</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout_10">
+       <item>
+        <widget class="QSplitter" name="splitter_3">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <widget class="QWidget" name="layoutWidget">
+          <layout class="QVBoxLayout" name="verticalLayout_9">
+           <item>
+            <widget class="QGroupBox" name="groupBox_13">
+             <property name="title">
+              <string>Catalog Selection</string>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_13">
+              <item row="0" column="0">
+               <widget class="QLabel" name="label_28">
+                <property name="text">
+                 <string>&amp;Minimum Altitude</string>
+                </property>
+                <property name="buddy">
+                 <cstring>min_alt</cstring>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="1">
+               <widget class="QSpinBox" name="min_alt">
+                <property name="suffix">
+                 <string> °</string>
+                </property>
+                <property name="minimum">
+                 <number>-90</number>
+                </property>
+                <property name="maximum">
+                 <number>90</number>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="0">
+               <widget class="QLabel" name="label_29">
+                <property name="text">
+                 <string>Altitude Ste&amp;p</string>
+                </property>
+                <property name="buddy">
+                 <cstring>alt_step</cstring>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="1">
+               <widget class="QSpinBox" name="alt_step">
+                <property name="suffix">
+                 <string> °</string>
+                </property>
+                <property name="minimum">
+                 <number>1</number>
+                </property>
+                <property name="maximum">
+                 <number>90</number>
+                </property>
+                <property name="singleStep">
+                 <number>10</number>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="0">
+               <widget class="QLabel" name="label_30">
+                <property name="text">
+                 <string>A&amp;zimuth Step</string>
+                </property>
+                <property name="buddy">
+                 <cstring>az_step</cstring>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="1">
+               <widget class="QSpinBox" name="az_step">
+                <property name="suffix">
+                 <string> °</string>
+                </property>
+                <property name="minimum">
+                 <number>1</number>
+                </property>
+                <property name="maximum">
+                 <number>90</number>
+                </property>
+                <property name="singleStep">
+                 <number>10</number>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="0">
+               <widget class="QLabel" name="label_31">
+                <property name="text">
+                 <string>Ma&amp;ximum Magnitude</string>
+                </property>
+                <property name="buddy">
+                 <cstring>max_mag</cstring>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="1">
+               <widget class="QDoubleSpinBox" name="max_mag">
+                <property name="suffix">
+                 <string> mag</string>
+                </property>
+                <property name="decimals">
+                 <number>1</number>
+                </property>
+                <property name="maximum">
+                 <double>5.000000000000000</double>
+                </property>
+                <property name="singleStep">
+                 <double>0.100000000000000</double>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QGroupBox" name="groupBox_14">
+             <property name="title">
+              <string>Gaussian Star Finder</string>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_14">
+              <item row="0" column="0">
+               <widget class="QLabel" name="label_32">
+                <property name="text">
+                 <string>&amp;ROI Size</string>
+                </property>
+                <property name="buddy">
+                 <cstring>gaussian_roi_size</cstring>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="1">
+               <widget class="QSpinBox" name="gaussian_roi_size">
+                <property name="suffix">
+                 <string> pixel</string>
+                </property>
+                <property name="minimum">
+                 <number>1</number>
+                </property>
+                <property name="singleStep">
+                 <number>2</number>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="0">
+               <widget class="QLabel" name="label_33">
+                <property name="text">
+                 <string>&amp;Threshold</string>
+                </property>
+                <property name="buddy">
+                 <cstring>gaussian_threshold</cstring>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="1">
+               <widget class="QDoubleSpinBox" name="gaussian_threshold">
+                <property name="maximum">
+                 <double>100.000000000000000</double>
+                </property>
+                <property name="singleStep">
+                 <double>0.100000000000000</double>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="0">
+               <widget class="QLabel" name="label_34">
+                <property name="text">
+                 <string>&amp;Kernel Size</string>
+                </property>
+                <property name="buddy">
+                 <cstring>gaussian_kernel_size</cstring>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="1">
+               <widget class="QSpinBox" name="gaussian_kernel_size">
+                <property name="suffix">
+                 <string> pixel</string>
+                </property>
+                <property name="minimum">
+                 <number>1</number>
+                </property>
+                <property name="maximum">
+                 <number>511</number>
+                </property>
+                <property name="singleStep">
+                 <number>2</number>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QGroupBox" name="groupBox_15">
+             <property name="title">
+              <string>Candidate Star Finder</string>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_15">
+              <item row="0" column="0">
+               <widget class="QLabel" name="label_35">
+                <property name="text">
+                 <string>&amp;Candidate Radius</string>
+                </property>
+                <property name="buddy">
+                 <cstring>candidate_radius</cstring>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="1">
+               <widget class="QSpinBox" name="candidate_radius">
+                <property name="suffix">
+                 <string> pixel</string>
+                </property>
+                <property name="minimum">
+                 <number>1</number>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="layoutWidget">
+          <layout class="QVBoxLayout" name="verticalLayout_8">
+           <item>
+            <widget class="QGroupBox" name="groupBox_18">
+             <property name="title">
+              <string>GFTT Detector</string>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_18">
+              <item row="0" column="0">
+               <widget class="QLabel" name="label_37">
+                <property name="text">
+                 <string>&amp;Maximum Corners</string>
+                </property>
+                <property name="buddy">
+                 <cstring>gftt_max_corners</cstring>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="1">
+               <widget class="QSpinBox" name="gftt_max_corners">
+                <property name="suffix">
+                 <string> corners</string>
+                </property>
+                <property name="minimum">
+                 <number>1</number>
+                </property>
+                <property name="maximum">
+                 <number>1000</number>
+                </property>
+                <property name="singleStep">
+                 <number>25</number>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="0">
+               <widget class="QLabel" name="label_38">
+                <property name="text">
+                 <string>&amp;Quality Level</string>
+                </property>
+                <property name="buddy">
+                 <cstring>gftt_quality_level</cstring>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="1">
+               <widget class="QDoubleSpinBox" name="gftt_quality_level">
+                <property name="decimals">
+                 <number>3</number>
+                </property>
+                <property name="maximum">
+                 <double>1.000000000000000</double>
+                </property>
+                <property name="singleStep">
+                 <double>0.001000000000000</double>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="0">
+               <widget class="QLabel" name="label_39">
+                <property name="text">
+                 <string>&amp;Minimum Distance</string>
+                </property>
+                <property name="buddy">
+                 <cstring>gftt_min_distance</cstring>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="1">
+               <widget class="QSpinBox" name="gftt_min_distance">
+                <property name="suffix">
+                 <string> pixel</string>
+                </property>
+                <property name="minimum">
+                 <number>1</number>
+                </property>
+                <property name="maximum">
+                 <number>511</number>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QGroupBox" name="groupBox_16">
+             <property name="title">
+              <string>SURF Detector</string>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_17">
+              <item row="0" column="0">
+               <widget class="QLabel" name="label_36">
+                <property name="text">
+                 <string>&amp;Threshold</string>
+                </property>
+                <property name="buddy">
+                 <cstring>surf_threshold</cstring>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="1">
+               <widget class="QDoubleSpinBox" name="surf_threshold">
+                <property name="maximum">
+                 <double>5.000000000000000</double>
+                </property>
+                <property name="singleStep">
+                 <double>0.100000000000000</double>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QGroupBox" name="groupBox_17">
+             <property name="title">
+              <string>LoG Detector</string>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_16">
+              <item row="0" column="0">
+               <widget class="QLabel" name="label_40">
+                <property name="text">
+                 <string>&amp;Maximum Rect Size</string>
+                </property>
+                <property name="buddy">
+                 <cstring>log_max_rect_size</cstring>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="1">
+               <widget class="QSpinBox" name="log_max_rect_size">
+                <property name="suffix">
+                 <string> pixel</string>
+                </property>
+                <property name="minimum">
+                 <number>1</number>
+                </property>
+                <property name="maximum">
+                 <number>511</number>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="0">
+               <widget class="QLabel" name="label_41">
+                <property name="text">
+                 <string>B&amp;lock Size</string>
+                </property>
+                <property name="buddy">
+                 <cstring>log_block_size</cstring>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="1">
+               <widget class="QSpinBox" name="log_block_size">
+                <property name="suffix">
+                 <string> pixel</string>
+                </property>
+                <property name="minimum">
+                 <number>1</number>
+                </property>
+                <property name="maximum">
+                 <number>511</number>
+                </property>
+                <property name="singleStep">
+                 <number>2</number>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="0">
+               <widget class="QLabel" name="label_42">
+                <property name="text">
+                 <string>&amp;Threshold</string>
+                </property>
+                <property name="buddy">
+                 <cstring>log_threshold</cstring>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="1">
+               <widget class="QDoubleSpinBox" name="log_threshold">
+                <property name="maximum">
+                 <double>1.000000000000000</double>
+                </property>
+                <property name="singleStep">
+                 <double>0.010000000000000</double>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="0">
+               <widget class="QLabel" name="label_43">
+                <property name="text">
+                 <string>&amp;Kernel Size</string>
+                </property>
+                <property name="buddy">
+                 <cstring>log_kernel_size</cstring>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="1">
+               <widget class="QSpinBox" name="log_kernel_size">
+                <property name="suffix">
+                 <string> pixel</string>
+                </property>
+                <property name="minimum">
+                 <number>1</number>
+                </property>
+                <property name="maximum">
+                 <number>511</number>
+                </property>
+                <property name="singleStep">
+                 <number>2</number>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <attribute name="title">
+       <string>Recording</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout_4">
+       <item>
+        <widget class="QSplitter" name="splitter">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <widget class="QWidget" name="layoutWidget">
+          <layout class="QVBoxLayout" name="verticalLayout_2">
+           <item>
+            <widget class="QGroupBox" name="groupBox_4">
+             <property name="title">
+              <string>Daytime</string>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_4">
+              <item row="0" column="0">
+               <widget class="QLabel" name="label">
+                <property name="text">
+                 <string>A&amp;veraging Frames</string>
+                </property>
+                <property name="buddy">
+                 <cstring>day_averaging_frames</cstring>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="1">
+               <widget class="QSpinBox" name="day_averaging_frames">
+                <property name="suffix">
+                 <string> frame(s)</string>
+                </property>
+                <property name="minimum">
+                 <number>1</number>
+                </property>
+                <property name="maximum">
+                 <number>1000</number>
+                </property>
+                <property name="singleStep">
+                 <number>10</number>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="0">
+               <widget class="QLabel" name="label_4">
+                <property name="text">
+                 <string>&amp;Time Between Frames</string>
+                </property>
+                <property name="buddy">
+                 <cstring>day_time_between_frames</cstring>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="1">
+               <widget class="QSpinBox" name="day_time_between_frames">
+                <property name="suffix">
+                 <string> s</string>
+                </property>
+                <property name="maximum">
+                 <number>100</number>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QGroupBox" name="groupBox">
+             <property name="title">
+              <string>Storage</string>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_3">
+              <item row="0" column="0">
+               <widget class="QLabel" name="label_3">
+                <property name="text">
+                 <string>Storage &amp;Path</string>
+                </property>
+                <property name="buddy">
+                 <cstring>btStorage</cstring>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="1">
+               <widget class="QLineEdit" name="default_storage_path"/>
+              </item>
+              <item row="0" column="2">
+               <widget class="QToolButton" name="btStorage">
+                <property name="text">
+                 <string>...</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="0" colspan="3">
+               <widget class="QCheckBox" name="store_in_subdirectory">
+                <property name="text">
+                 <string>St&amp;ore in Subdirectories</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="layoutWidget">
+          <layout class="QVBoxLayout" name="verticalLayout_3">
+           <item>
+            <widget class="QGroupBox" name="groupBox_2">
+             <property name="title">
+              <string>Nighttime</string>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_2">
+              <item row="0" column="0">
+               <widget class="QLabel" name="label_2">
+                <property name="text">
+                 <string>Avera&amp;ging Frames</string>
+                </property>
+                <property name="buddy">
+                 <cstring>night_averaging_frames</cstring>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="1">
+               <widget class="QSpinBox" name="night_averaging_frames">
+                <property name="suffix">
+                 <string> frame(s)</string>
+                </property>
+                <property name="minimum">
+                 <number>1</number>
+                </property>
+                <property name="maximum">
+                 <number>1000</number>
+                </property>
+                <property name="singleStep">
+                 <number>10</number>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="0">
+               <widget class="QLabel" name="label_5">
+                <property name="text">
+                 <string>&amp;Time Between Frames</string>
+                </property>
+                <property name="buddy">
+                 <cstring>night_time_between_frames</cstring>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="1">
+               <widget class="QSpinBox" name="night_time_between_frames">
+                <property name="suffix">
+                 <string> s</string>
+                </property>
+                <property name="maximum">
+                 <number>100</number>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QGroupBox" name="groupBox_3">
+             <property name="title">
+              <string>Dynamic Night Frame Averaging</string>
+             </property>
+             <layout class="QGridLayout" name="gridLayout">
+              <item row="0" column="0" colspan="2">
+               <widget class="QCheckBox" name="dnfa_enabled">
+                <property name="text">
+                 <string>&amp;Enabled</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="0">
+               <widget class="QLabel" name="label_7">
+                <property name="text">
+                 <string>Window Si&amp;ze</string>
+                </property>
+                <property name="buddy">
+                 <cstring>dnfa_window_size</cstring>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="1">
+               <widget class="QSpinBox" name="dnfa_window_size">
+                <property name="suffix">
+                 <string> frames</string>
+                </property>
+                <property name="minimum">
+                 <number>5</number>
+                </property>
+                <property name="maximum">
+                 <number>500</number>
+                </property>
+                <property name="singleStep">
+                 <number>10</number>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="0">
+               <widget class="QLabel" name="label_8">
+                <property name="text">
+                 <string>&amp;Min./Med. Difference Factor</string>
+                </property>
+                <property name="buddy">
+                 <cstring>dnfa_min_med_diff_factor</cstring>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="1">
+               <widget class="QDoubleSpinBox" name="dnfa_min_med_diff_factor">
+                <property name="minimum">
+                 <double>0.010000000000000</double>
+                </property>
+                <property name="maximum">
+                 <double>5.000000000000000</double>
+                </property>
+                <property name="singleStep">
+                 <double>0.100000000000000</double>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="0">
+               <widget class="QLabel" name="label_9">
+                <property name="text">
+                 <string>Min. Difference Va&amp;lue</string>
+                </property>
+                <property name="buddy">
+                 <cstring>dnfa_min_diff_value</cstring>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="1">
+               <widget class="QDoubleSpinBox" name="dnfa_min_diff_value">
+                <property name="minimum">
+                 <double>0.010000000000000</double>
+                </property>
+                <property name="maximum">
+                 <double>5.000000000000000</double>
+                </property>
+                <property name="singleStep">
+                 <double>0.100000000000000</double>
+                </property>
+               </widget>
+              </item>
+              <item row="4" column="0">
+               <widget class="QLabel" name="label_10">
+                <property name="text">
+                 <string>Minim&amp;um Frames</string>
+                </property>
+                <property name="buddy">
+                 <cstring>dnfa_min_frames</cstring>
+                </property>
+               </widget>
+              </item>
+              <item row="4" column="1">
+               <widget class="QSpinBox" name="dnfa_min_frames">
+                <property name="suffix">
+                 <string> frame(s)</string>
+                </property>
+                <property name="minimum">
+                 <number>1</number>
+                </property>
+                <property name="maximum">
+                 <number>1000</number>
+                </property>
+                <property name="singleStep">
+                 <number>10</number>
+                </property>
+               </widget>
+              </item>
+              <item row="5" column="0">
+               <widget class="QLabel" name="label_11">
+                <property name="text">
+                 <string>Ma&amp;ximum Frames</string>
+                </property>
+                <property name="buddy">
+                 <cstring>dnfa_max_frames</cstring>
+                </property>
+               </widget>
+              </item>
+              <item row="5" column="1">
+               <widget class="QSpinBox" name="dnfa_max_frames">
+                <property name="suffix">
+                 <string> frame(s)</string>
+                </property>
+                <property name="minimum">
+                 <number>1</number>
+                </property>
+                <property name="maximum">
+                 <number>1000</number>
+                </property>
+                <property name="singleStep">
+                 <number>10</number>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>tabWidget</tabstop>
+  <tabstop>day_averaging_frames</tabstop>
+  <tabstop>day_time_between_frames</tabstop>
+  <tabstop>night_averaging_frames</tabstop>
+  <tabstop>night_time_between_frames</tabstop>
+  <tabstop>default_storage_path</tabstop>
+  <tabstop>btStorage</tabstop>
+  <tabstop>store_in_subdirectory</tabstop>
+  <tabstop>dnfa_enabled</tabstop>
+  <tabstop>dnfa_window_size</tabstop>
+  <tabstop>dnfa_min_med_diff_factor</tabstop>
+  <tabstop>dnfa_min_diff_value</tabstop>
+  <tabstop>dnfa_min_frames</tabstop>
+  <tabstop>dnfa_max_frames</tabstop>
+  <tabstop>rb_difference_threshold</tabstop>
+  <tabstop>rb_ratio_threshold</tabstop>
+  <tabstop>br_ratio_threshold</tabstop>
+  <tabstop>adaptive_threshold</tabstop>
+  <tabstop>adaptive_block_size</tabstop>
+  <tabstop>morphology_kernel_size</tabstop>
+  <tabstop>morphology_iterations</tabstop>
+  <tabstop>background_rect_size</tabstop>
+  <tabstop>mc_rb_threshold</tabstop>
+  <tabstop>mc_bg_threshold</tabstop>
+  <tabstop>mc_b_threshold</tabstop>
+  <tabstop>sp_num_superpixels</tabstop>
+  <tabstop>sp_prior</tabstop>
+  <tabstop>sp_num_levels</tabstop>
+  <tabstop>sp_num_histogram_bins</tabstop>
+  <tabstop>sp_num_iterations</tabstop>
+  <tabstop>sp_kernel_size</tabstop>
+  <tabstop>min_alt</tabstop>
+  <tabstop>alt_step</tabstop>
+  <tabstop>az_step</tabstop>
+  <tabstop>max_mag</tabstop>
+  <tabstop>gaussian_roi_size</tabstop>
+  <tabstop>gaussian_threshold</tabstop>
+  <tabstop>gaussian_kernel_size</tabstop>
+  <tabstop>candidate_radius</tabstop>
+  <tabstop>gftt_max_corners</tabstop>
+  <tabstop>gftt_quality_level</tabstop>
+  <tabstop>gftt_min_distance</tabstop>
+  <tabstop>surf_threshold</tabstop>
+  <tabstop>log_max_rect_size</tabstop>
+  <tabstop>log_block_size</tabstop>
+  <tabstop>log_threshold</tabstop>
+  <tabstop>log_kernel_size</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
